@@ -2,102 +2,478 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="space-y-0">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-[#fff3d6] py-12 sm:py-16">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20"></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        {/* Large background symposium logo */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <Image
+            src="/logos/symposium-logo.png"
+            alt=""
+            width={400}
+            height={400}
+            className="h-60 w-60 sm:h-80 sm:w-80 lg:h-[22rem] lg:w-[22rem] object-contain opacity-20"
+            priority
+          />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 text-center">
+          {/* Logos */}
+          <div
+            className="mx-auto mb-8 flex max-w-4xl items-center justify-between px-2 sm:px-4 md:px-6 lg:px-8"
+            style={{ position: "relative", zIndex: 2 }}
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/logos/bits-logo.png"
+              alt="BITS Pilani"
+              width={240}
+              height={80}
+              className="w-[150px] sm:w-[200px] h-auto object-contain opacity-90 ml-18"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <Image
+              src="/logos/rae-logo.png"
+              alt="Royal Academy of Engineering"
+              width={264}
+              height={88}
+              className="w-[170px] sm:w-[220px] h-auto object-contain opacity-90 mr-18"
+              priority
+            />
+          </div>
+
+          <h1 className="mx-auto max-w-4xl text-balance text-5xl font-bold tracking-tight text-[#000000] sm:text-7xl">
+            Accessible by Design
+          </h1>
+          <h2 className="mt-4 text-2xl font-semibold text-[#000000] sm:text-3xl">
+            An International Symposium
+          </h2>
+          <h3 className="mt-4 text-xl font-medium text-[#000000] sm:text-2xl italic">
+            Towards disability equity in tech futures
+          </h3>
+
+          <div className="mt-12 flex items-center justify-center gap-6">
+            <a
+              href="#register"
+              className="rounded-lg bg-[#c1b89f] px-8 py-4 text-lg font-semibold text-[#000000] shadow-lg transition-all hover:bg-[#d8cfb6] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+            >
+              Register Now
+            </a>
+            <a
+              href="#about"
+              className="rounded-lg border border-[#c1b89f] px-8 py-4 text-lg font-semibold text-[#000000] hover:bg-[#c1b89f]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+            >
+              Learn More
+            </a>
+          </div>
+
+          {/* Scrolling Registration Message */}
+          <div className="mt-8 overflow-hidden py-3">
+            <div className="flex animate-marquee whitespace-nowrap">
+              <span className="text-red-600 font-bold text-lg px-4 flex-shrink-0">
+                Registration deadline is approaching soon! Register before 30th
+                September and get a chance to be a part of this International
+                Symposium!
+              </span>
+              <span className="text-red-600 font-bold text-lg px-4 flex-shrink-0">
+                Registration deadline is approaching soon! Register before 30th
+                September and get a chance to be a part of this International
+                Symposium!
+              </span>
+              <span className="text-red-600 font-bold text-lg px-4 flex-shrink-0">
+                Registration deadline is approaching soon! Register before 30th
+                September and get a chance to be a part of this International
+                Symposium!
+              </span>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-[#f2e7cb]">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-8">
+              About the Symposium
+            </h2>
+            <div className="text-xl leading-relaxed text-[#000000] space-y-6">
+              <p>
+                <span className="font-bold">Accessible by Design</span> is a{" "}
+                <span className="font-bold">two-day symposium</span> at
+                BITS-Pilani Hyderabad Campus, highlighting the development of
+                assistive technology in India to foster a more inclusive,
+                equitable and empowered society for people with disabilities.
+              </p>
+              <p>
+                The symposium centers the knowledge and leadership of persons
+                with disabilities as shapers and co-creators of accessible and
+                just design futures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Details */}
+      <section className="py-16 bg-[#fff3d6]">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
+              Event Details
+            </h2>
+          </div>
+
+          <div className="mx-auto mt-16 max-w-5xl">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                  <svg
+                    className="h-6 w-6 text-[#000000]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443a55.381 55.381 0 015.25 2.882V15a.75.75 0 101.5 0v-.313a22.77 22.77 0 011.1-.306c.443-.106.893-.204 1.35-.294V15a.75.75 0 101.5 0v-.294a5.008 5.008 0 011.65-.294.75.75 0 100-1.5 3.507 3.507 0 00-1.65.294V11.25"
+                    />
+                  </svg>
+                </div>
+                <h3 className="mt-6 text-lg font-semibold text-[#000000]">
+                  Date & Time
+                </h3>
+                <p className="mt-2 text-[#000000]">October 15-16, 2025</p>
+              </div>
+
+              <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                  <svg
+                    className="h-6 w-6 text-[#000000]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="mt-6 text-lg font-semibold text-[#000000]">
+                  Location
+                </h3>
+                <p className="mt-2 text-[#000000]">
+                  BITS Pilani, Hyderabad Campus
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                  <svg
+                    className="h-6 w-6 text-[#000000]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="mt-6 text-lg font-semibold text-[#000000]">
+                  Participants
+                </h3>
+                <p className="mt-2 text-[#000000]">Students & Faculty</p>
+                <p className="text-sm text-[#000000]">Industry Experts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Themes Section */}
+      <section className="py-20 bg-[#f2e7cb]">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-4xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-6">
+              Themes
+            </h2>
+            <p className="text-xl leading-relaxed text-[#000000]">
+              This symposium is critically structured thematically around the
+              four canonical stages of design thinking:{" "}
+              <span className="font-semibold">
+                Empathize, Define, Ideate, and Prototype
+              </span>
+              , with the objectives listed below.
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              {/* Theme 1 */}
+              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+                <h3 className="text-xl font-bold text-[#000000] mb-3">
+                  Theme 1: Empathize
+                </h3>
+                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                  Whose Empathy? Whose Experience?
+                </h4>
+                <p className="text-base leading-relaxed text-[#000000]">
+                  To foster interdisciplinary dialogue between different
+                  stakeholders of Assistive Technology and go beyond tokenism by
+                  recognising the potential of disabled people as
+                  user-designers.
+                </p>
+              </div>
+
+              {/* Theme 2 */}
+              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+                <h3 className="text-xl font-bold text-[#000000] mb-3">
+                  Theme 2: Define
+                </h3>
+                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                  Defining Problems or Defining People?
+                </h4>
+                <p className="text-base leading-relaxed text-[#000000]">
+                  To discuss the relevance of user-centric design in Assistive
+                  Technology, ensuring solutions that are accessible by going
+                  beyond body-centric solutions to environmental adaptations.
+                </p>
+              </div>
+
+              {/* Theme 3 */}
+              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+                <h3 className="text-xl font-bold text-[#000000] mb-3">
+                  Theme 3: Ideate
+                </h3>
+                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                  Whose Ideas Count?
+                </h4>
+                <p className="text-base leading-relaxed text-[#000000]">
+                  To identify emerging trends, challenges, and future directions
+                  in Assistive Technology in the form of design fictions and
+                  critiques that are disability centric.
+                </p>
+              </div>
+
+              {/* Theme 4 */}
+              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+                <h3 className="text-xl font-bold text-[#000000] mb-3">
+                  Theme 4: Prototype
+                </h3>
+                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                  Accessible to Whom? Legible to What?
+                </h4>
+                <p className="text-base leading-relaxed text-[#000000]">
+                  To examine the concepts of accessibility and legibility in the
+                  design of Assistive Technology by reflecting on inaccessible
+                  prototyping practices and disability-led prototyping
+                  processes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Events Section */}
+      <section className="py-20 bg-[#fff3d6]">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
+              Events
+            </h2>
+          </div>
+
+          <div className="mx-auto max-w-5xl">
+            <div className="space-y-8">
+              {/* Thematic Panel Discussions */}
+              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                      <svg
+                        className="h-6 w-6 text-[#000000]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-[#000000] mb-2">
+                      Thematic Panel Discussions
+                    </h3>
+                    <p className="text-base text-[#000000] leading-relaxed">
+                      Engaging discussions with experts and stakeholders
+                      exploring the four design thinking themes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Plan Workshops */}
+              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                      <svg
+                        className="h-6 w-6 text-[#000000]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-[#000000] mb-2">
+                      Action Plan and Recommendation Workshops
+                    </h3>
+                    <p className="text-base text-[#000000] leading-relaxed">
+                      Collaborative workshops to develop actionable strategies
+                      and recommendations for accessible design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Technology Showcase */}
+              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                      <svg
+                        className="h-6 w-6 text-[#000000]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-[#000000] mb-2">
+                      Technology Showcase
+                    </h3>
+                    <p className="text-base text-[#000000] leading-relaxed">
+                      Display by AT companies and innovators showcasing
+                      cutting-edge assistive technologies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Ideation Competition */}
+              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#000000]">
+                      <svg
+                        className="h-6 w-6 text-[#fff3d6]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m4.5 0a12.06 12.06 0 00-1.5-1.5m0 0a12.06 12.06 0 00-4.5 0m1.5-1.5v-2.25M12 13.5L7.5 18 12 22.5 16.5 18z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-[#000000] mb-2">
+                      Ideation Competition
+                    </h3>
+                    <p className="text-base text-[#000000] leading-relaxed">
+                      Innovative accessibility solutions competition fostering
+                      creative problem-solving and design innovation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Registration Section */}
+      <section id="register" className="py-16 bg-[#f2e7cb]">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
+              Register Now
+            </h2>
+            <p className="mt-4 text-lg text-[#000000]">
+              Secure your spot at this transformative event
+            </p>
+
+            <div className="mt-10 space-y-4">
+              <a
+                href="https://forms.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg bg-[#d8cfb6] px-8 py-4 text-lg font-semibold text-[#000000] shadow-lg transition-all hover:bg-[#e2d8bc] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+              >
+                Register via Google Form
+                <svg
+                  className="ml-2 h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  />
+                </svg>
+              </a>
+
+              <p className="text-sm text-[#000000]">
+                Registration deadline: September 30, 2025
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
