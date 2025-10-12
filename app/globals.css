@@ -31,6 +31,11 @@ html, body {
   color: #000000;
 }
 
+/* Smooth in-page scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Utility for visually-hidden but focusable */
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);

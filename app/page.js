@@ -1,4 +1,5 @@
 import Image from "next/image";
+import InPageNav from "./components/InPageNav";
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20"></div>
 
         {/* Large background symposium logo */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div
+          className="absolute inset-0 flex items-center justify-center pointer-events-none"
+          aria-hidden="true"
+        >
           <Image
             src="/logos/symposium-logo.png"
             alt=""
@@ -27,7 +31,7 @@ export default function Home() {
           >
             <Image
               src="/logos/bits-logo.png"
-              alt="BITS Pilani"
+              alt="BITS Pilani Hyderabad Campus logo"
               width={240}
               height={80}
               className="w-[150px] sm:w-[200px] h-auto object-contain opacity-90 ml-18"
@@ -35,7 +39,7 @@ export default function Home() {
             />
             <Image
               src="/logos/rae-logo.png"
-              alt="Royal Academy of Engineering"
+              alt="Royal Academy of Engineering logo"
               width={264}
               height={88}
               className="w-[170px] sm:w-[220px] h-auto object-contain opacity-90 mr-18"
@@ -91,6 +95,8 @@ export default function Home() {
         </div>
       </section>
 
+      <InPageNav />
+
       {/* About Section */}
       <section id="about" className="py-20 bg-[#f2e7cb]">
         <div className="mx-auto max-w-7xl px-6">
@@ -117,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* Event Details */}
-      <section className="py-16 bg-[#fff3d6]">
+      <section id="event-details" className="py-16 bg-[#fff3d6]">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
@@ -130,6 +136,8 @@ export default function Home() {
               <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     className="h-6 w-6 text-[#000000]"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -152,6 +160,8 @@ export default function Home() {
               <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     className="h-6 w-6 text-[#000000]"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -181,6 +191,8 @@ export default function Home() {
               <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     className="h-6 w-6 text-[#000000]"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -206,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* Themes Section */}
-      <section className="py-20 bg-[#f2e7cb]">
+      <section id="themes" className="py-20 bg-[#f2e7cb]">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-4xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-6">
@@ -291,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* Events Section */}
-      <section className="py-20 bg-[#fff3d6]">
+      <section id="events" className="py-20 bg-[#fff3d6]">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
@@ -307,6 +319,8 @@ export default function Home() {
                   <div className="flex-shrink-0">
                     <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
                       <svg
+                        aria-hidden="true"
+                        focusable="false"
                         className="h-6 w-6 text-[#000000]"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -339,6 +353,8 @@ export default function Home() {
                   <div className="flex-shrink-0">
                     <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
                       <svg
+                        aria-hidden="true"
+                        focusable="false"
                         className="h-6 w-6 text-[#000000]"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -371,6 +387,8 @@ export default function Home() {
                   <div className="flex-shrink-0">
                     <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
                       <svg
+                        aria-hidden="true"
+                        focusable="false"
                         className="h-6 w-6 text-[#000000]"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -397,37 +415,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Ideation Competition */}
-              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
-                <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#000000]">
-                      <svg
-                        className="h-6 w-6 text-[#fff3d6]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m4.5 0a12.06 12.06 0 00-1.5-1.5m0 0a12.06 12.06 0 00-4.5 0m1.5-1.5v-2.25M12 13.5L7.5 18 12 22.5 16.5 18z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-[#000000] mb-2">
-                      Ideation Competition
-                    </h3>
-                    <p className="text-base text-[#000000] leading-relaxed">
-                      Innovative accessibility solutions competition fostering
-                      creative problem-solving and design innovation.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {/* Ideation Competition removed */}
             </div>
           </div>
         </div>
@@ -453,6 +441,8 @@ export default function Home() {
               >
                 Register via Google Form
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   className="ml-2 h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"

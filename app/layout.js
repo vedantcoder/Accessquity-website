@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               <Link href="/" className="flex items-center gap-3">
                 <Image
                   src="/logos/symposium-logo.png"
-                  alt="Symposium Logo"
+                  alt="Accessible by Design symposium logo"
                   width={36}
                   height={36}
                   className="h-9 w-9 object-contain"
@@ -52,12 +52,7 @@ export default function RootLayout({ children }) {
                   </p>
                 </div>
               </Link>
-              <Link
-                href="/competition"
-                className="rounded-lg bg-gradient-to-r from-[#c1b89f] to-[#d8cfb6] px-4 py-2 text-sm font-semibold text-[#000000] shadow-md transition-all hover:shadow-lg hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000] focus-visible:ring-offset-2"
-              >
-                Competition
-              </Link>
+              {/* Competition link removed per request */}
             </div>
             <div className="flex items-center gap-4">
               <Link
@@ -80,14 +75,14 @@ export default function RootLayout({ children }) {
               <div className="flex items-center gap-4">
                 <Image
                   src="/logos/bits-logo.png"
-                  alt="BITS Pilani"
+                  alt="BITS Pilani Hyderabad Campus logo"
                   width={80}
                   height={24}
                   className="h-6 object-contain bg-[#f2e7cb] px-2 py-1 rounded"
                 />
                 <Image
                   src="/logos/rae-logo.png"
-                  alt="Royal Academy of Engineering"
+                  alt="Royal Academy of Engineering logo"
                   width={80}
                   height={24}
                   className="h-6 object-contain bg-[#f2e7cb] px-2 py-1 rounded"
