@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           Skip to content
         </a>
 
-        <header className="sticky top-0 z-40 border-b border-[#c1b89f] bg-[#f2e7cb] backdrop-blur supports-[backdrop-filter]:bg-[#f2e7cb]/95">
+        <header className="sticky top-0 z-40 border-b border-[#e6e6e6] bg-white backdrop-blur supports-[backdrop-filter]:bg-white/95">
           <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
             <div className="flex items-center gap-6">
               <Link href="/" className="flex items-center gap-3">
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
 
-        <footer className="border-t border-[#c1b89f] bg-[#d8cfb6]">
+        <footer className="border-t border-[#e6e6e6] bg-alt-dark">
           <div className="mx-auto max-w-7xl px-6 py-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <div className="flex items-center gap-4">

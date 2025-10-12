@@ -2,7 +2,7 @@
 
 /* Color tokens using cream shades for backgrounds, black for text */
 :root {
-  --color-background: #f2e7cb; /* cream background */
+  --color-background: #ffffff; /* switch site background to white */
   --color-foreground: #000000; /* black text */
   --color-muted: #000000; /* black text for muted */
   --color-border: #c1b89f; /* darker cream border */
@@ -18,6 +18,20 @@
   --color-cream-900: #c1b89f;
 }
 
+/* Alternate subtle backgrounds: 2% white and 2% black */
+:root {
+  --alt-white-2: rgba(255,255,255,0.02);
+  --alt-black-2: rgba(0,0,0,0.02);
+}
+
+.bg-alt-light {
+  background-color: var(--alt-white-2);
+}
+
+.bg-alt-dark {
+  background-color: var(--alt-black-2);
+}
+
 /* Better focus styles out of the box */
 :where(a, button, [role="button"], input, select, textarea):focus-visible {
   outline: none;
@@ -27,8 +41,15 @@
 
 /* Base document styles */
 html, body {
-  background-color: #f2e7cb;
+  background-color: var(--color-background);
   color: #000000;
+}
+
+/* Force Times New Roman globally (overrides imported fonts) */
+*,
+*::before,
+*::after {
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 /* Smooth in-page scrolling for anchor links */

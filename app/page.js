@@ -4,8 +4,8 @@ import InPageNav from "./components/InPageNav";
 export default function Home() {
   return (
     <div className="space-y-0">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#fff3d6] py-12 sm:py-16">
+      {/* Hero Section (white) */}
+      <section className="relative overflow-hidden bg-white py-12 sm:py-16">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20"></div>
 
         {/* Large background symposium logo */}
@@ -72,33 +72,14 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Scrolling Registration Message */}
-          <div className="mt-8 overflow-hidden py-3">
-            <div className="flex animate-marquee whitespace-nowrap">
-              <span className="text-red-600 font-bold text-lg px-4 flex-shrink-0">
-                Registration deadline is approaching soon! Register before 30th
-                September and get a chance to be a part of this International
-                Symposium!
-              </span>
-              <span className="text-red-600 font-bold text-lg px-4 flex-shrink-0">
-                Registration deadline is approaching soon! Register before 30th
-                September and get a chance to be a part of this International
-                Symposium!
-              </span>
-              <span className="text-red-600 font-bold text-lg px-4 flex-shrink-0">
-                Registration deadline is approaching soon! Register before 30th
-                September and get a chance to be a part of this International
-                Symposium!
-              </span>
-            </div>
-          </div>
+          {/* Registration message removed per request */}
         </div>
       </section>
 
       <InPageNav />
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-[#f2e7cb]">
+      {/* About Section (2% black) */}
+      <section id="about" className="py-20 bg-alt-dark">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-8">
@@ -122,8 +103,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Event Details */}
-      <section id="event-details" className="py-16 bg-[#fff3d6]">
+      {/* Event Details (white) */}
+      <section id="event-details" className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
@@ -133,8 +114,8 @@ export default function Home() {
 
           <div className="mx-auto mt-16 max-w-5xl">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+              <div className="rounded-2xl bg-white p-8 text-center border border-[#e6e6e6]">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-alt-dark">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -157,8 +138,8 @@ export default function Home() {
                 <p className="mt-2 text-[#000000]">October 15-16, 2025</p>
               </div>
 
-              <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+              <div className="rounded-2xl bg-white p-8 text-center border border-[#e6e6e6]">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-alt-dark">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -188,8 +169,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-[#e2d8bc] p-8 text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+              <div className="rounded-2xl bg-white p-8 text-center border border-[#e6e6e6]">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-alt-dark">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -217,8 +198,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Themes Section */}
-      <section id="themes" className="py-20 bg-[#f2e7cb]">
+      {/* Themes Section (2% black) */}
+      <section id="themes" className="py-20 bg-alt-dark">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-4xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-6">
@@ -237,7 +218,7 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               {/* Theme 1 */}
-              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+              <div className="rounded-xl bg-white p-8 text-left border border-[#e6e6e6]">
                 <h3 className="text-xl font-bold text-[#000000] mb-3">
                   Theme 1: Empathize
                 </h3>
@@ -253,7 +234,7 @@ export default function Home() {
               </div>
 
               {/* Theme 2 */}
-              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+              <div className="rounded-xl bg-white p-8 text-left border border-[#e6e6e6]">
                 <h3 className="text-xl font-bold text-[#000000] mb-3">
                   Theme 2: Define
                 </h3>
@@ -268,7 +249,7 @@ export default function Home() {
               </div>
 
               {/* Theme 3 */}
-              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+              <div className="rounded-xl bg-white p-8 text-left border border-[#e6e6e6]">
                 <h3 className="text-xl font-bold text-[#000000] mb-3">
                   Theme 3: Ideate
                 </h3>
@@ -283,7 +264,7 @@ export default function Home() {
               </div>
 
               {/* Theme 4 */}
-              <div className="rounded-xl bg-[#e2d8bc] p-8 text-left">
+              <div className="rounded-xl bg-white p-8 text-left border border-[#e6e6e6]">
                 <h3 className="text-xl font-bold text-[#000000] mb-3">
                   Theme 4: Prototype
                 </h3>
@@ -302,8 +283,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Events Section */}
-      <section id="events" className="py-20 bg-[#fff3d6]">
+      {/* Events Section (white) */}
+      <section id="events" className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">
@@ -314,10 +295,10 @@ export default function Home() {
           <div className="mx-auto max-w-5xl">
             <div className="space-y-8">
               {/* Thematic Panel Discussions */}
-              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+              <div className="rounded-xl border border-[#e6e6e6] bg-white p-8">
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-alt-dark">
                       <svg
                         aria-hidden="true"
                         focusable="false"
@@ -348,10 +329,10 @@ export default function Home() {
               </div>
 
               {/* Action Plan Workshops */}
-              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+              <div className="rounded-xl border border-[#e6e6e6] bg-white p-8">
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-alt-dark">
                       <svg
                         aria-hidden="true"
                         focusable="false"
@@ -382,10 +363,10 @@ export default function Home() {
               </div>
 
               {/* Technology Showcase */}
-              <div className="rounded-xl border border-[#c1b89f] bg-[#e2d8bc] p-8">
+              <div className="rounded-xl border border-[#e6e6e6] bg-white p-8">
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#c1b89f]">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-alt-dark">
                       <svg
                         aria-hidden="true"
                         focusable="false"
@@ -421,8 +402,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Registration Section */}
-      <section id="register" className="py-16 bg-[#f2e7cb]">
+      {/* Registration Section (2% black) */}
+      <section id="register" className="py-16 bg-alt-dark">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl">

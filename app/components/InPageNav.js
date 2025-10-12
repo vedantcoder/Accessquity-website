@@ -44,10 +44,7 @@ export default function InPageNav() {
   }, []);
 
   return (
-    <nav
-      aria-label="Primary"
-      className="bg-[#f2e7cb] border-b border-[#e6dcc2]"
-    >
+    <nav aria-label="Primary" className="bg-alt-dark border-b border-[#e6e6e6]">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex justify-center">
           <ul
@@ -60,8 +57,8 @@ export default function InPageNav() {
                   href={`#${it.id}`}
                   className={`inline-block px-6 py-3 rounded-md text-base font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000] ${
                     active === it.id
-                      ? "bg-[#c1b89f] text-[#000000] shadow-md"
-                      : "text-[#000000] hover:bg-[#e2d8bc]"
+                      ? "bg-alt-dark text-[#000000] shadow-md"
+                      : "text-[#000000] hover:bg-alt-dark"
                   }`}
                   aria-current={active === it.id ? "page" : undefined}
                 >
