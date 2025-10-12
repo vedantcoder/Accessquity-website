@@ -105,7 +105,8 @@ export default function RootLayout({ children }) {
           <div className="mx-auto max-w-7xl px-6 py-8">
             <div className="flex flex-col items-center justify-center">
               <p className="text-sm text-[#000000]">
-                © {new Date().getFullYear()} accessquity.com
+                © {new Date().getFullYear()} accessquity.com. All rights
+                reserved.
               </p>
             </div>
           </div>
