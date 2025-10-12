@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           Skip to content
         </a>
 
-        <header className="sticky top-0 z-40 border-b border-[#e6e6e6] bg-white backdrop-blur supports-[backdrop-filter]:bg-white/95">
+        <header className="sticky top-0 z-40 border-b border-[#e6e6e6] bg-alt-dark backdrop-blur supports-[backdrop-filter]:bg-alt-dark/95">
           <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
             <div className="flex items-center gap-6">
               <Link href="/" className="flex items-center gap-3">
@@ -52,14 +52,46 @@ export default function RootLayout({ children }) {
                   </p>
                 </div>
               </Link>
-              {/* Competition link removed per request */}
+              {/* Main navigation links */}
+              <div className="hidden md:flex items-center gap-2 ml-8">
+                <Link
+                  href="#about"
+                  className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                >
+                  About
+                </Link>
+                <Link
+                  href="#themes"
+                  className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                >
+                  Themes
+                </Link>
+                <Link
+                  href="#register"
+                  className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                >
+                  Register
+                </Link>
+                <Link
+                  href="#organizers"
+                  className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                >
+                  Organizers
+                </Link>
+                <Link
+                  href="#sponsors"
+                  className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                >
+                  Sponsors
+                </Link>
+              </div>
             </div>
             <div className="flex items-center gap-4">
               <Link
-                href="#register"
-                className="rounded-full bg-[#c1b89f] px-4 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-[#d8cfb6] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000] focus-visible:ring-offset-2"
+                href="#schedule"
+                className="rounded-full bg-[#000000] px-4 py-2 text-sm font-medium text-[#ffffff] transition-all hover:bg-[#333333] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000] focus-visible:ring-offset-2"
               >
-                Register
+                View Schedule
               </Link>
             </div>
           </nav>
@@ -71,26 +103,9 @@ export default function RootLayout({ children }) {
 
         <footer className="border-t border-[#e6e6e6] bg-alt-dark">
           <div className="mx-auto max-w-7xl px-6 py-8">
-            <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-              <div className="flex items-center gap-4">
-                <Image
-                  src="/logos/bits-logo.png"
-                  alt="BITS Pilani Hyderabad Campus logo"
-                  width={80}
-                  height={24}
-                  className="h-6 object-contain bg-[#f2e7cb] px-2 py-1 rounded"
-                />
-                <Image
-                  src="/logos/rae-logo.png"
-                  alt="Royal Academy of Engineering logo"
-                  width={80}
-                  height={24}
-                  className="h-6 object-contain bg-[#f2e7cb] px-2 py-1 rounded"
-                />
-              </div>
+            <div className="flex flex-col items-center justify-center">
               <p className="text-sm text-[#000000]">
-                © {new Date().getFullYear()} BITS Pilani - Royal Academy of
-                Engineering. All rights reserved.
+                © {new Date().getFullYear()} accessquity.com
               </p>
             </div>
           </div>
