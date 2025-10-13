@@ -6,10 +6,16 @@ export default function Home() {
   return (
     <div className="space-y-0">
       {/* Hero Section (white) - new layout: three logos, two-column content with divider on desktop */}
-      <section className="relative overflow-hidden bg-white py-12 sm:py-16">
+      <section
+        className="relative overflow-hidden bg-white py-12 sm:py-16"
+        aria-labelledby="hero-title"
+      >
         <div className="relative mx-auto max-w-7xl px-6">
           {/* Top logos: left, center, right */}
-          <div className="-mt-6 mb-4 flex items-start justify-between">
+          <div
+            className="-mt-6 mb-4 flex items-start justify-between"
+            role="banner"
+          >
             <div className="flex-1 flex justify-start">
               <Image
                 src="/logos/bits-logo.png"
@@ -18,7 +24,12 @@ export default function Home() {
                 height={64}
                 className="h-20 w-auto sm:h-24 lg:h-28 object-contain"
                 priority
+                aria-describedby="bits-logo-description"
               />
+              <span id="bits-logo-description" className="sr-only">
+                BITS Pilani Hyderabad Campus is a hosting institution for the
+                symposium
+              </span>
             </div>
 
             <div className="flex-1 flex flex-col items-center justify-center">
@@ -29,8 +40,12 @@ export default function Home() {
                 height={120}
                 className="h-20 w-auto sm:h-24 lg:h-28 object-contain"
                 priority
+                aria-describedby="symposium-logo-description"
               />
-              <p className="mt-2 text-base sm:text-lg italic text-[#000000]">
+              <p
+                className="mt-2 text-base sm:text-lg italic text-[#000000]"
+                id="symposium-logo-description"
+              >
                 AccessQuity
               </p>
             </div>
@@ -43,7 +58,12 @@ export default function Home() {
                 height={64}
                 className="h-20 w-auto sm:h-24 lg:h-28 object-contain"
                 priority
+                aria-describedby="rae-logo-description"
               />
+              <span id="rae-logo-description" className="sr-only">
+                Royal Academy of Engineering is a supporting organization for
+                the symposium
+              </span>
             </div>
           </div>
 
@@ -51,18 +71,26 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
             {/* Left: large title and date */}
             <div className="lg:col-span-1 text-left">
-              <h1 className="text-balance text-6xl font-bold tracking-tight text-[#000000] sm:text-7xl lg:text-8xl">
+              <h1
+                id="hero-title"
+                className="text-balance text-6xl font-bold tracking-tight text-[#000000] sm:text-7xl lg:text-8xl"
+              >
                 Accessible by Design
               </h1>
               <p className="mt-3 text-xl sm:text-2xl text-[#000000] italic">
                 a two-day international symposium
               </p>
-              <p className="mt-4 text-3xl sm:text-4xl font-semibold text-[#000000]">
-                <strong>15-16 October, 2025</strong>
-              </p>
-              <p className="text-lg sm:text-xl text-[#000000]">
-                Venue: Auditorium
-              </p>
+              <div aria-labelledby="event-details-title">
+                <h2 id="event-details-title" className="sr-only">
+                  Event Details
+                </h2>
+                <p className="mt-4 text-3xl sm:text-4xl font-semibold text-[#000000]">
+                  <strong>15-16 October, 2025</strong>
+                </p>
+                <p className="text-lg sm:text-xl text-[#000000]">
+                  Venue: Auditorium
+                </p>
+              </div>
             </div>
 
             {/* Divider visible from md up (solid black) */}
@@ -75,7 +103,13 @@ export default function Home() {
             </div>
 
             {/* Right: place the two buttons here (replaces 'organized by') */}
-            <div className="lg:col-span-1 lg:text-right lg:-ml-8">
+            <div
+              className="lg:col-span-1 lg:text-right lg:-ml-8"
+              aria-labelledby="supported-by"
+            >
+              <h2 id="supported-by" className="sr-only">
+                Supported By
+              </h2>
               <p className="text-xl md:text-2xl lg:text-2xl leading-relaxed text-[#000000] max-w-[52ch]">
                 supported by the Department of Science, Innovation, and
                 Technology&#39;s International Science Partnerships Fund (ISPF)
@@ -86,17 +120,19 @@ export default function Home() {
           </div>
 
           {/* Bottom-centered buttons across the hero */}
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center" aria-label="Quick links">
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#schedule"
                 className="inline-block rounded-lg bg-[#000000] px-10 py-4 text-lg font-semibold text-[#ffffff] shadow-lg transition-all hover:bg-[#333333] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                aria-label="View the symposium schedule"
               >
                 View Schedule
               </a>
               <a
                 href="#register"
                 className="inline-block rounded-lg border border-[#000000] px-10 py-4 text-lg font-semibold text-[#000000] hover:bg-[#000000]/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                aria-label="Register for the symposium"
               >
                 Register Now
               </a>
@@ -106,16 +142,26 @@ export default function Home() {
       </section>
 
       {/* About the Symposium Section */}
-      <section id="about" className="py-20 bg-alt-dark">
+      <section
+        id="about"
+        className="py-20 bg-alt-dark"
+        aria-labelledby="about-heading"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold tracking-tight text-[#000000] sm:text-5xl mb-6">
+              <h2
+                id="about-heading"
+                className="text-4xl font-bold tracking-tight text-[#000000] sm:text-5xl mb-6"
+              >
                 About the Symposium
               </h2>
-              <h3 className="text-2xl font-semibold italic text-[#000000] mb-8">
+              <p
+                className="text-2xl font-semibold italic text-[#000000] mb-8"
+                aria-labelledby="about-heading"
+              >
                 Towards disability equity in tech futures
-              </h3>
+              </p>
             </div>
 
             {/* Main content in single column for better readability */}
@@ -156,40 +202,55 @@ export default function Home() {
             {/* Events and Participants in clean grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
               {/* Events Section */}
-              <div className="bg-white p-10 rounded-2xl shadow-lg border border-[#e6e6e6]">
-                <h4 className="text-3xl font-bold text-[#000000] mb-8 text-center">
+              <div
+                className="bg-white p-10 rounded-2xl shadow-lg border border-[#e6e6e6]"
+                aria-labelledby="events-heading"
+              >
+                <h3
+                  id="events-heading"
+                  className="text-3xl font-bold text-[#000000] mb-8 text-center"
+                >
                   Events
-                </h4>
-                <div className="space-y-6">
-                  <div className="p-4 bg-gray-50 rounded-lg">
+                </h3>
+                <ul className="space-y-6" aria-label="List of symposium events">
+                  <li className="p-4 bg-gray-50 rounded-lg">
                     <span className="text-lg font-medium text-[#000000]">
                       Thematic panel discussions
                     </span>
-                  </div>
-                  <div className="p-4 bg-gray-50 rounded-lg">
+                  </li>
+                  <li className="p-4 bg-gray-50 rounded-lg">
                     <span className="text-lg font-medium text-[#000000]">
                       Action plan and recommendation workshops
                     </span>
-                  </div>
-                  <div className="p-4 bg-gray-50 rounded-lg">
+                  </li>
+                  <li className="p-4 bg-gray-50 rounded-lg">
                     <span className="text-lg font-medium text-[#000000]">
                       Technology showcase - Display by AT companies and
                       innovators
                     </span>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
 
               {/* Participants Section */}
-              <div className="bg-white p-10 rounded-2xl shadow-lg border border-[#e6e6e6]">
-                <h4 className="text-3xl font-bold text-[#000000] mb-6 text-center">
+              <div
+                className="bg-white p-10 rounded-2xl shadow-lg border border-[#e6e6e6]"
+                aria-labelledby="participants-heading"
+              >
+                <h3
+                  id="participants-heading"
+                  className="text-3xl font-bold text-[#000000] mb-6 text-center"
+                >
                   Participants
-                </h4>
+                </h3>
                 <p className="text-lg text-[#000000] mb-8 text-center">
                   This symposium invites a diverse community of participants
                   from across the assistive technology ecosystem, including:
                 </p>
-                <div className="grid grid-cols-1 gap-3">
+                <ul
+                  className="grid grid-cols-1 gap-3"
+                  aria-label="List of participant types"
+                >
                   {[
                     "Disability advocates",
                     "Designers",
@@ -200,16 +261,16 @@ export default function Home() {
                     "Industry leaders",
                     "DPOs and NGOs",
                   ].map((participant, index) => (
-                    <div
+                    <li
                       key={index}
                       className="p-3 bg-gray-50 rounded-lg text-center"
                     >
                       <span className="text-base text-[#000000] font-medium">
                         {participant}
                       </span>
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           </div>
@@ -217,10 +278,17 @@ export default function Home() {
       </section>
 
       {/* Themes Section */}
-      <section id="themes" className="py-20 bg-white">
+      <section
+        id="themes"
+        className="py-20 bg-white"
+        aria-labelledby="themes-heading"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-4xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-6">
+            <h2
+              id="themes-heading"
+              className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-6"
+            >
               Themes
             </h2>
             <p className="text-xl leading-relaxed text-[#000000]">
@@ -234,15 +302,29 @@ export default function Home() {
           </div>
 
           <div className="mx-auto max-w-6xl">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div
+              className="grid grid-cols-1 gap-8 md:grid-cols-2"
+              role="list"
+              aria-label="Symposium themes"
+            >
               {/* Theme 1 */}
-              <div className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]">
-                <h3 className="text-xl font-bold text-[#000000] mb-3">
+              <div
+                className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]"
+                role="listitem"
+                aria-labelledby="theme-1-heading"
+              >
+                <h3
+                  id="theme-1-heading"
+                  className="text-xl font-bold text-[#000000] mb-3"
+                >
                   Theme 1: Empathize
                 </h3>
-                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                <p
+                  className="text-lg font-semibold text-[#000000] mb-4 italic"
+                  aria-labelledby="theme-1-heading"
+                >
                   Whose Empathy? Whose Experience?
-                </h4>
+                </p>
                 <p className="text-base leading-relaxed text-[#000000]">
                   To foster interdisciplinary dialogue between different
                   stakeholders of Assistive Technology and go beyond tokenism by
@@ -252,13 +334,23 @@ export default function Home() {
               </div>
 
               {/* Theme 2 */}
-              <div className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]">
-                <h3 className="text-xl font-bold text-[#000000] mb-3">
+              <div
+                className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]"
+                role="listitem"
+                aria-labelledby="theme-2-heading"
+              >
+                <h3
+                  id="theme-2-heading"
+                  className="text-xl font-bold text-[#000000] mb-3"
+                >
                   Theme 2: Define
                 </h3>
-                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                <p
+                  className="text-lg font-semibold text-[#000000] mb-4 italic"
+                  aria-labelledby="theme-2-heading"
+                >
                   Defining Problems or Defining People?
-                </h4>
+                </p>
                 <p className="text-base leading-relaxed text-[#000000]">
                   To discuss the relevance of user-centric design in Assistive
                   Technology, ensuring solutions that are accessible by going
@@ -267,13 +359,23 @@ export default function Home() {
               </div>
 
               {/* Theme 3 */}
-              <div className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]">
-                <h3 className="text-xl font-bold text-[#000000] mb-3">
+              <div
+                className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]"
+                role="listitem"
+                aria-labelledby="theme-3-heading"
+              >
+                <h3
+                  id="theme-3-heading"
+                  className="text-xl font-bold text-[#000000] mb-3"
+                >
                   Theme 3: Ideate
                 </h3>
-                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                <p
+                  className="text-lg font-semibold text-[#000000] mb-4 italic"
+                  aria-labelledby="theme-3-heading"
+                >
                   Whose Ideas Count?
-                </h4>
+                </p>
                 <p className="text-base leading-relaxed text-[#000000]">
                   To identify emerging trends, challenges, and future directions
                   in Assistive Technology in the form of design fictions and
@@ -282,13 +384,23 @@ export default function Home() {
               </div>
 
               {/* Theme 4 */}
-              <div className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]">
-                <h3 className="text-xl font-bold text-[#000000] mb-3">
+              <div
+                className="rounded-xl bg-alt-dark p-8 text-left border border-[#e6e6e6]"
+                role="listitem"
+                aria-labelledby="theme-4-heading"
+              >
+                <h3
+                  id="theme-4-heading"
+                  className="text-xl font-bold text-[#000000] mb-3"
+                >
                   Theme 4: Prototype
                 </h3>
-                <h4 className="text-lg font-semibold text-[#000000] mb-4 italic">
+                <p
+                  className="text-lg font-semibold text-[#000000] mb-4 italic"
+                  aria-labelledby="theme-4-heading"
+                >
                   Accessible to Whom? Legible to What?
-                </h4>
+                </p>
                 <p className="text-base leading-relaxed text-[#000000]">
                   To examine the concepts of accessibility and legibility in the
                   design of Assistive Technology by reflecting on inaccessible
@@ -302,18 +414,36 @@ export default function Home() {
       </section>
 
       {/* Keynote Sessions Section */}
-      <section id="keynote-sessions" className="py-20 bg-alt-dark">
+      <section
+        id="keynote-sessions"
+        className="py-20 bg-alt-dark"
+        aria-labelledby="keynote-heading"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-12 text-center">
+            <h2
+              id="keynote-heading"
+              className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-12 text-center"
+            >
               Keynote Sessions
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              role="list"
+              aria-label="Keynote speakers"
+            >
               {/* Plenary 1 */}
-              <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                role="listitem"
+                aria-labelledby="keynote-1-heading"
+              >
                 {/* Colorful header */}
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-red-500"></div>
+                <div
+                  className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-red-500"
+                  aria-hidden="true"
+                ></div>
 
                 {/* Content with gradient overlay for better text visibility */}
                 <div className="bg-[#333333] text-white p-8 h-full flex flex-col relative">
@@ -323,7 +453,10 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mt-6 mb-2">
+                  <h3
+                    id="keynote-1-heading"
+                    className="text-2xl font-bold text-white mt-6 mb-2"
+                  >
                     Prof. Hemachandran Karah
                   </h3>
 
@@ -332,20 +465,24 @@ export default function Home() {
                   </p>
 
                   <div className="mb-6 flex-grow">
-                    <h4 className="font-semibold text-lg mb-2 text-white italic">
+                    <p className="font-semibold text-lg mb-2 text-white italic">
                       &ldquo;End-usage as Craftsmanship and Engineering:
                       Challenges and Opportunities in Co-creating Assistive
                       Technology&rdquo;
-                    </h4>
+                    </p>
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
-                    <div className="flex items-center">
+                    <div
+                      className="flex items-center"
+                      aria-label="Time: 10:15 PM"
+                    >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
@@ -355,12 +492,16 @@ export default function Home() {
                       </svg>
                       <span className="text-sm">10:15 pm</span>
                     </div>
-                    <div className="flex items-center">
+                    <div
+                      className="flex items-center"
+                      aria-label="Date: October 15, 2025"
+                    >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
@@ -375,9 +516,16 @@ export default function Home() {
               </div>
 
               {/* Plenary 2 */}
-              <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                role="listitem"
+                aria-labelledby="keynote-2-heading"
+              >
                 {/* Colorful header */}
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-red-500"></div>
+                <div
+                  className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-red-500"
+                  aria-hidden="true"
+                ></div>
 
                 {/* Content with gradient overlay for better text visibility */}
                 <div className="bg-[#333333] text-white p-8 h-full flex flex-col relative">
@@ -387,7 +535,10 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mt-6 mb-2">
+                  <h3
+                    id="keynote-2-heading"
+                    className="text-2xl font-bold text-white mt-6 mb-2"
+                  >
                     Prof. Amita Dhanda
                   </h3>
 
@@ -397,10 +548,10 @@ export default function Home() {
                   </p>
 
                   <div className="mb-6 flex-grow">
-                    <h4 className="font-semibold text-lg mb-2 text-white italic">
+                    <p className="font-semibold text-lg mb-2 text-white italic">
                       &ldquo;Why the Right to Accessibility Needs the Force of
                       the Law&rdquo;
-                    </h4>
+                    </p>
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
@@ -439,9 +590,16 @@ export default function Home() {
               </div>
 
               {/* Plenary 3 */}
-              <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                role="listitem"
+                aria-labelledby="keynote-3-heading"
+              >
                 {/* Colorful header */}
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-red-500"></div>
+                <div
+                  className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-red-500"
+                  aria-hidden="true"
+                ></div>
 
                 {/* Content with gradient overlay for better text visibility */}
                 <div className="bg-[#333333] text-white p-8 h-full flex flex-col relative">
@@ -451,7 +609,10 @@ export default function Home() {
                     </span>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mt-6 mb-2">
+                  <h3
+                    id="keynote-3-heading"
+                    className="text-2xl font-bold text-white mt-6 mb-2"
+                  >
                     Prof. Shilpa Das
                   </h3>
 
@@ -461,19 +622,23 @@ export default function Home() {
                   </p>
 
                   <div className="mb-6 flex-grow">
-                    <h4 className="font-semibold text-lg mb-2 text-white italic">
+                    <p className="font-semibold text-lg mb-2 text-white italic">
                       &ldquo;From Assistive Design to Equitable Systems: The
                       Disability-Led Mandate for Design Futures&rdquo;
-                    </h4>
+                    </p>
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
-                    <div className="flex items-center">
+                    <div
+                      className="flex items-center"
+                      aria-label="Time: 12:30 PM"
+                    >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
@@ -483,12 +648,16 @@ export default function Home() {
                       </svg>
                       <span className="text-sm">12:30 pm</span>
                     </div>
-                    <div className="flex items-center">
+                    <div
+                      className="flex items-center"
+                      aria-label="Date: October 16, 2025"
+                    >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"

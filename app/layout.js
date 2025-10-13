@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Symposium",
-  description: "College Symposium Website",
+  title: "Accessquity",
+  description: "Accessquity Website",
 };
 
 export default function RootLayout({ children }) {
@@ -32,10 +32,20 @@ export default function RootLayout({ children }) {
           Skip to content
         </a>
 
-        <header className="sticky top-0 z-40 border-b border-[#e6e6e6] bg-alt-dark backdrop-blur supports-[backdrop-filter]:bg-alt-dark/95">
-          <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+        <header
+          className="sticky top-0 z-40 border-b border-[#e6e6e6] bg-alt-dark backdrop-blur supports-[backdrop-filter]:bg-alt-dark/95"
+          role="banner"
+        >
+          <nav
+            className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6"
+            aria-label="Main Navigation"
+          >
             <div className="flex items-center gap-6">
-              <Link href="/" className="flex items-center gap-3">
+              <Link
+                href="/"
+                className="flex items-center gap-3"
+                aria-label="Go to homepage"
+              >
                 <Image
                   src="/logos/symposium-logo.png"
                   alt="Accessible by Design symposium logo"
@@ -53,34 +63,43 @@ export default function RootLayout({ children }) {
                 </div>
               </Link>
               {/* Main navigation links */}
-              <div className="hidden md:flex items-center gap-2 ml-8">
+              <div
+                className="hidden md:flex items-center gap-2 ml-8"
+                role="navigation"
+                aria-label="Main sections"
+              >
                 <Link
                   href="#about"
                   className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                  aria-label="About section"
                 >
                   About
                 </Link>
                 <Link
                   href="#themes"
                   className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                  aria-label="Themes section"
                 >
                   Themes
                 </Link>
                 <Link
                   href="#register"
                   className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                  aria-label="Registration section"
                 >
                   Register
                 </Link>
                 <Link
                   href="#organizers"
                   className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                  aria-label="Organizers section"
                 >
                   Organizers
                 </Link>
                 <Link
                   href="#sponsors"
                   className="rounded-md bg-alt-dark px-3 py-2 text-sm font-medium text-[#000000] transition-all hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]"
+                  aria-label="Sponsors section"
                 >
                   Sponsors
                 </Link>
@@ -90,6 +109,7 @@ export default function RootLayout({ children }) {
               <Link
                 href="#schedule"
                 className="rounded-full bg-[#000000] px-4 py-2 text-sm font-medium text-[#ffffff] transition-all hover:bg-[#333333] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000] focus-visible:ring-offset-2"
+                aria-label="View the symposium schedule"
               >
                 View Schedule
               </Link>
@@ -97,11 +117,14 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
 
-        <main id="main" className="min-h-screen">
+        <main id="main" className="min-h-screen" role="main">
           {children}
         </main>
 
-        <footer className="border-t border-[#e6e6e6] bg-alt-dark">
+        <footer
+          className="border-t border-[#e6e6e6] bg-alt-dark"
+          role="contentinfo"
+        >
           <div className="mx-auto max-w-7xl px-6 py-8">
             <div className="flex flex-col items-center justify-center">
               <p className="text-sm text-[#000000]">
