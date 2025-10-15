@@ -850,7 +850,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/apd.png"
+                  src="/logos/APD.png"
                   alt="Association of People with Disability logo"
                   width={100}
                   height={100}
@@ -876,7 +876,7 @@ export default function Home() {
               {/* Row 2 */}
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/mitrajyothi_ap.png"
+                  src="/logos/Mitrajyothi_AP.png"
                   alt="Mitrajyothi, Bangalore logo"
                   width={100}
                   height={100}
@@ -901,7 +901,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/nalsar_ap.png"
+                  src="/logos/NALSAR_AP.png"
                   alt="Convention Center, NALSAR University of Law Hyderabad logo"
                   width={100}
                   height={100}
@@ -915,7 +915,7 @@ export default function Home() {
               {/* Row 3 */}
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/trinayani.png"
+                  src="/logos/Trinayani.png"
                   alt="TRINAYANI - Creating Awareness about Disability logo"
                   width={120}
                   height={60}
