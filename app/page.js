@@ -475,7 +475,7 @@ export default function Home() {
                   <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
                     <div
                       className="flex items-center"
-                      aria-label="Time: 10:15 PM"
+                      aria-label="Time: 09:30 AM"
                     >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
@@ -490,7 +490,7 @@ export default function Home() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span className="text-sm">10:15 pm</span>
+                      <span className="text-sm">09:30 am</span>
                     </div>
                     <div
                       className="flex items-center"
@@ -555,7 +555,10 @@ export default function Home() {
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
-                    <div className="flex items-center">
+                    <div
+                      className="flex items-center"
+                      aria-label="Time: 02:00 PM"
+                    >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
                         fill="currentColor"
@@ -568,9 +571,12 @@ export default function Home() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span className="text-sm">04:00 pm</span>
+                      <span className="text-sm">02:00 pm</span>
                     </div>
-                    <div className="flex items-center">
+                    <div
+                      className="flex items-center"
+                      aria-label="Date: October 15, 2025"
+                    >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
                         fill="currentColor"
@@ -631,7 +637,7 @@ export default function Home() {
                   <div className="mt-auto pt-4 border-t border-white/20 flex items-center justify-between">
                     <div
                       className="flex items-center"
-                      aria-label="Time: 12:30 PM"
+                      aria-label="Time: 04:30 PM"
                     >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
@@ -646,11 +652,11 @@ export default function Home() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span className="text-sm">12:30 pm</span>
+                      <span className="text-sm">04:30 pm</span>
                     </div>
                     <div
                       className="flex items-center"
-                      aria-label="Date: October 16, 2025"
+                      aria-label="Date: October 15, 2025"
                     >
                       <svg
                         className="w-5 h-5 text-sky-300 mr-2"
@@ -665,7 +671,7 @@ export default function Home() {
                           clipRule="evenodd"
                         ></path>
                       </svg>
-                      <span className="text-sm">16 October, 2025</span>
+                      <span className="text-sm">15 October, 2025</span>
                     </div>
                   </div>
                 </div>
@@ -815,7 +821,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-8 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center text-center">
                 <Image
-                  src="/logos/CDS_KP.jpg"
+                  src="/logos/CDS_KP.png"
                   alt="Centre for Disability Studies, NALSAR University of Law Hyderabad logo"
                   width={120}
                   height={120}
@@ -856,7 +862,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/Telangana Viklangula_AP.jpeg"
+                  src="/logos/Telangana Viklangula_AP.png"
                   alt="Telangana Vikalangula Cooperative Corporation Braille Press logo"
                   width={100}
                   height={100}
@@ -870,7 +876,7 @@ export default function Home() {
               {/* Row 2 */}
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/mitrajyothi_ap.jpeg"
+                  src="/logos/mitrajyothi_ap.png"
                   alt="Mitrajyothi, Bangalore logo"
                   width={100}
                   height={100}
