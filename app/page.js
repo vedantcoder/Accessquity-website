@@ -862,7 +862,7 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
                 <Image
-                  src="/logos/Telangana Viklangula_AP.png"
+                  src="/logos/Telangana%20Viklangula_AP.png"
                   alt="Telangana Vikalangula Cooperative Corporation Braille Press logo"
                   width={100}
                   height={100}
