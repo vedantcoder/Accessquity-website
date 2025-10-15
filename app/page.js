@@ -839,7 +839,7 @@ function ScheduleComponent() {
                 : "text-[#000000] hover:bg-white/50"
             }`}
           >
-            Day 1 - 15th October, 2025
+            Day 1 · 15 Oct 2025
           </button>
           <button
             id="day2-tab"
@@ -853,12 +853,12 @@ function ScheduleComponent() {
                 : "text-[#000000] hover:bg-white/50"
             }`}
           >
-            Day 2 - 16th October, 2025
+            Day 2 · 16 Oct 2025
           </button>
         </div>
       </div>
 
-      {/* Day 1 Content */}
+      {/* Day 1 */}
       {activeDay === 1 && (
         <div
           id="day1-panel"
@@ -866,240 +866,222 @@ function ScheduleComponent() {
           aria-labelledby="day1-tab"
           className="space-y-6"
         >
-          {/* Inaugural Session */}
           <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6]">
-            <h4 className="text-2xl font-bold text-[#000000] mb-4">
+            <h4 className="text-2xl font-bold text-[#000000] mb-2">
               Inaugural Session
             </h4>
-            <p className="text-lg text-[#000000] font-semibold">
-              Time: 09:30 a.m. to 10:15 a.m.
+            <p className="text-base text-[#000000] font-semibold">
+              Time: 09:30 to 11:00 a.m.
+            </p>
+            <p className="mt-3 text-base text-[#000000]">
+              Welcome and symposium inauguration.
+            </p>
+            <p className="mt-2 text-base text-[#000000]">
+              <strong>Chief Guest:</strong> Prof. Soumyo Mukherji, Director,
+              BITS-Pilani Hyderabad Campus
             </p>
           </div>
 
-          {/* Morning Sessions - Day 1 */}
           <div>
-            <h4 className="text-2xl font-bold text-[#000000] mb-6">
+            <h4 className="text-2xl font-bold text-[#000000] mb-4">
               Morning Sessions
             </h4>
 
-            {/* Plenary 1 */}
             <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
                 Plenary 1
               </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 10:15 a.m. to 11:00 a.m.
-              </p>
-              <p className="text-base text-[#000000]">
-                <strong>Speaker:</strong> Prof. Hemachandran Karah, Director of
-                Accessibility Research Centre at IIT Madras.
-              </p>
-            </div>
-
-            {/* Break */}
-            <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">Break</h5>
-              <p className="text-base text-[#000000]">Duration: 30 minutes</p>
-              <p className="text-base text-[#000000]">
-                Time: 11:00 a.m. to 11:30 a.m.
-              </p>
-            </div>
-
-            {/* Session 1 */}
-            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Session 1
-              </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 11:30 a.m. to 1:00 p.m.
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 09:30 to 11:00 a.m.
               </p>
               <p className="text-base text-[#000000] font-semibold mb-2">
-                Theme: Empathize - Whose empathy? Whose experience?
+                Session Title: End-usage as Craftsmanship and Engineering:
+                Challenges and Opportunities in Co-creating Assistive Technology
               </p>
-              <p className="text-base text-[#000000] mb-4">
+              <p className="text-base text-[#000000] mb-2">
+                <strong>Speaker:</strong> Prof. Hemachandran Karah — Director,
+                Accessibility Research Centre, IIT Madras
+              </p>
+              <p className="text-base text-[#000000]">
+                <strong>Chair:</strong> Prof. Dipanjan Chakraborty
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl mb-6 border-2 border-dashed border-[#e6e6e6] bg-white text-center">
+              <h5 className="text-lg font-semibold text-[#000000] italic mb-1">
+                Break
+              </h5>
+              <p className="text-sm text-[#444444]">
+                11:00 a.m. — 11:30 a.m. (30 minutes)
+              </p>
+            </div>
+
+            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Session 1 — Empathize
+              </h5>
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 11:30 a.m. to 1:00 p.m.
+              </p>
+              <p className="text-base text-[#000000] mb-3">
+                Theme: Empathize — Whose empathy? Whose experience?
+              </p>
+              <p className="text-base text-[#000000] mb-3">
                 Theme Description: To foster interdisciplinary dialogue between
                 different stakeholders of Assistive Technology and go beyond
                 tokenism by recognising the potential of disabled people as
                 user-designers.
               </p>
-              <div>
-                <p className="text-base text-[#000000] font-semibold mb-2">
-                  Presenters:
-                </p>
-                <ul className="list-none space-y-1">
-                  <li className="text-base text-[#000000]">
-                    R. Nitin Sinha, Research Scholar at the Department of Design
-                    at IIT Hyderabad.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Arya Moitra, Independent Scholar with M.A. in English at
-                    Jadavpur University, Class of 2025.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Ananya Thakur, Department of Design at IIT Hyderabad.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Raghavendra Satish Peri, Founder of HelloA11y.com and a
-                    Digital Accessibility Evangelist.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Dr. Karthika J, Post-Doctoral Researcher at Accessibility
-                    Research Centre, IIT Madras.
-                  </li>
-                </ul>
-              </div>
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Chair: Professor Bidisha Banerjee, Department of Humanities and
+                Social Sciences, BITS-Pilani Hyderabad Campus
+              </p>
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Presenters:
+              </p>
+              <ul className="list-disc pl-6 space-y-1 text-[#000000]">
+                <li>
+                  R. Nitin Sinha — Research Scholar, Department of Design, IIT
+                  Hyderabad
+                </li>
+                <li>
+                  Arya Moitra — Independent Scholar (M.A. English, Jadavpur
+                  University, Class of 2025)
+                </li>
+                <li>Ananya Thakur — Department of Design, IIT Hyderabad</li>
+                <li>
+                  Raghavendra Satish Peri — Founder, HelloA11y.com; Digital
+                  Accessibility Evangelist
+                </li>
+                <li>
+                  Dr. Karthika J — Post-Doctoral Researcher, Accessibility
+                  Research Centre, IIT Madras
+                </li>
+              </ul>
             </div>
 
-            {/* Lunch */}
-            <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">Lunch</h5>
-              <p className="text-base text-[#000000]">Time: 1 to 2 p.m.</p>
-              <p className="text-base text-[#000000]">
-                Venue: Auditorium Foyer
+            <div className="p-6 rounded-xl mb-6 border-2 border-dashed border-[#e6e6e6] bg-white text-center">
+              <h5 className="text-lg font-semibold text-[#000000] italic mb-1">
+                Lunch
+              </h5>
+              <p className="text-sm text-[#444444]">
+                1:00 p.m. — 2:00 p.m. • Auditorium Foyer
               </p>
             </div>
           </div>
 
-          {/* Afternoon Sessions - Day 1 */}
           <div>
-            <h4 className="text-2xl font-bold text-[#000000] mb-6">
+            <h4 className="text-2xl font-bold text-[#000000] mb-4">
               Afternoon Sessions
             </h4>
 
-            {/* Session 2 */}
             <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Session 2
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Plenary 2
               </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 2 to 3:30 p.m.
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 2:00 to 2:45 p.m.
               </p>
               <p className="text-base text-[#000000] font-semibold mb-2">
-                Theme: Define – Defining Problems or Defining People?
+                Session Title: &apos;From Assistive Design to Equitable Systems:
+                The Disability-Led Mandate for Design Futures&apos;
               </p>
-              <p className="text-base text-[#000000] mb-4">
+              <p className="text-base text-[#000000] mb-1">
+                <strong>Speaker:</strong> Prof. Shilpa Das — Head, Faculty of
+                Interdisciplinary Design Studies, National Institute of Design,
+                Ahmedabad
+              </p>
+              <p className="text-base text-[#000000]">
+                <strong>Chair:</strong> Professor Lavanya Suresh, Department of
+                Humanities and Social Sciences, BITS-Pilani Hyderabad Campus
+              </p>
+            </div>
+
+            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Session 2 — Define
+              </h5>
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 2:45 to 4:15 p.m.
+              </p>
+              <p className="text-base text-[#000000] mb-3">
+                Theme: Define — Defining Problems or Defining People?
+              </p>
+              <p className="text-base text-[#000000] mb-3">
                 Theme Description: To discuss the relevance of user-centric
                 design in Assistive Technology, ensuring solutions that are
                 accessible by going beyond body-centric solutions to
                 environmental adaptations.
               </p>
-              <div>
-                <p className="text-base text-[#000000] font-semibold mb-2">
-                  Participants:
-                </p>
-                <ul className="list-none space-y-1">
-                  <li className="text-base text-[#000000]">
-                    Neha Manik Jadhav, Product Manager at Helix Opportunity and
-                    Progressive Accessibility Solutions.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Amar Pawar, PhD Research Candidate at the Centre for
-                    Political Studies, JNU, New Delhi.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Manasi Panwar, PhD Research Scholar at the Department of
-                    Humanities and Social Sciences, BITS Pilani.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Dr. Viswesh Sekhar, Advocate practising in the High Court of
-                    Karnataka and a Disability Rights Professional.
-                  </li>
-                </ul>
-              </div>
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Chair: Professor Meghana Rao, Azim Premji University, Bengaluru
+              </p>
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Participants:
+              </p>
+              <ul className="list-disc pl-6 space-y-1 text-[#000000]">
+                <li>
+                  Neha Manik Jadhav — Product Manager, Helix Opportunity and
+                  Progressive Accessibility Solutions
+                </li>
+                <li>
+                  Amar Pawar — PhD Research Candidate, Centre for Political
+                  Studies, JNU, New Delhi
+                </li>
+                <li>
+                  Manasi Panwar — PhD Research Scholar, Department of Humanities
+                  and Social Sciences, BITS Pilani
+                </li>
+                <li>Pavan Muntha — CEO, Swadhikaar</li>
+                <li>
+                  Dr. Viswesh Sekhar — Advocate (High Court of Karnataka) and
+                  Disability Rights Professional
+                </li>
+              </ul>
             </div>
 
-            {/* Break */}
             <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">Break</h5>
-              <p className="text-base text-[#000000]">Duration: 30 minutes</p>
+              <h5 className="text-xl font-bold text-[#000000] mb-1">Break</h5>
               <p className="text-base text-[#000000]">
-                Time: 3:30 p.m. to 4:00 p.m.
+                Duration: 30 minutes — 4:15 to 4:30 p.m.
               </p>
             </div>
 
-            {/* Plenary 2 */}
             <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Plenary 2
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Plenary 3
               </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 4 p.m. to 4:45 p.m.
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 4:30 to 5:15 p.m.
               </p>
               <p className="text-base text-[#000000] font-semibold mb-2">
                 Session Title: &quot;Why the Right to Accessibility Needs the
                 Force of the Law&quot;
               </p>
+              <p className="text-base text-[#000000] mb-1">
+                <strong>Speaker:</strong> Prof. Amita Dhanda — Professor of Law
+                & Director, Centre for Disability Studies, NALSAR University of
+                Law, Hyderabad
+              </p>
               <p className="text-base text-[#000000]">
-                <strong>Speaker:</strong> Prof. Amita Dhanda, Professor of Law
-                and Director at Centre for Disability Studies, NALSAR University
-                of Law, Hyderabad.
+                <strong>Chair:</strong> Professor T. Vijay Kumar, Department of
+                Humanities and Social Sciences, BITS-Pilani Hyderabad Campus
               </p>
             </div>
 
-            {/* Session 3 */}
-            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Session 3
-              </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 4:45 p.m. to 5:30 p.m.
-              </p>
-              <p className="text-base text-[#000000] font-semibold mb-2">
-                Theme: Define – Defining Problems or Defining People? and Ideate
-                – Whose Ideas Count?
-              </p>
-              <div className="mb-4">
-                <p className="text-base text-[#000000] mb-2">
-                  <strong>Theme Description:</strong>
-                </p>
-                <p className="text-base text-[#000000] mb-2">
-                  <strong>Define:</strong> To discuss the relevance of
-                  user-centric design in Assistive Technology, ensuring
-                  solutions that are accessible by going beyond body-centric
-                  solutions to environmental adaptations.
-                </p>
-                <p className="text-base text-[#000000]">
-                  <strong>Ideate:</strong> To identify emerging trends,
-                  challenges, and future directions in Assistive Technology in
-                  the form of design fictions and critiques that are disability
-                  centric
-                </p>
-              </div>
-              <div>
-                <p className="text-base text-[#000000] font-semibold mb-2">
-                  Participants:
-                </p>
-                <ul className="list-none space-y-1">
-                  <li className="text-base text-[#000000]">
-                    Deepa Palaniappan, Consultant for Disability Team at Azim
-                    Premji University, Bengaluru.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Krishna Thiruvengadam, CEO & CoFounder at dVerse
-                    Technologies Pvt Ltd
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Pavan Muntha, CEO at Swadhikaar
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Director's Dinner */}
             <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">
+              <h5 className="text-xl font-bold text-[#000000] mb-1">
                 Director&apos;s Dinner
               </h5>
-              <p className="text-base text-[#000000]">Time: 07:00 p.m.</p>
               <p className="text-base text-[#000000]">
-                Venue: Auditorium Foyer
+                Time: 07:00 p.m. — Venue: Auditorium Foyer
               </p>
             </div>
           </div>
         </div>
       )}
 
-      {/* Day 2 Content */}
+      {/* Day 2 */}
       {activeDay === 2 && (
         <div
           id="day2-panel"
@@ -1107,214 +1089,195 @@ function ScheduleComponent() {
           aria-labelledby="day2-tab"
           className="space-y-6"
         >
-          {/* Morning Sessions */}
           <div>
-            <h4 className="text-2xl font-bold text-[#000000] mb-6">
+            <h4 className="text-2xl font-bold text-[#000000] mb-4">
               Morning Sessions
             </h4>
 
-            {/* Session 4 */}
             <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Session 4
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Session 3 — Ideate
               </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 9:30 a.m. to 11:00 a.m.
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 9:30 to 11:00 a.m.
+              </p>
+              <p className="text-base text-[#000000] mb-3">
+                Theme: Ideate — Whose Ideas Count? (To identify emerging trends,
+                challenges, and future directions in Assistive Technology in the
+                form of design fictions and critiques that are disability
+                centric.)
               </p>
               <p className="text-base text-[#000000] font-semibold mb-2">
-                Theme: Ideate – Whose Ideas Count?
+                Chair: Professor Sarbani Banerjee-Belur, Department of
+                Humanities and Social Sciences, BITS-Pilani Hyderabad Campus
               </p>
-              <p className="text-base text-[#000000] mb-4">
-                Theme Description: To identify emerging trends, challenges, and
-                future directions in Assistive Technology in the form of design
-                fictions and critiques that are disability centric.
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Presenters:
               </p>
-              <div>
-                <p className="text-base text-[#000000] font-semibold mb-2">
-                  Presenters:
-                </p>
-                <ul className="list-none space-y-1">
-                  <li className="text-base text-[#000000]">
-                    Prof. Tony Kurian, Assistant Professor at Social Science
-                    group in the School of Arts and Sciences, Azim Premji
-                    University, Bengaluru.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Dr. Bubai Bag, Members of Sruti Disability Rights centre at
-                    Kolkata and Assistant Professor at Bagnan College
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Samya Brata Roy, Assistant Professor, Gitam Deemed to be
-                    University, Hyderabad
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Dr. Sujith. C, Senior Research Fellow at the Department of
-                    Indian and World Literatures, EFL University Hyderabad.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Keerthana.R, Research Scholar at the Department of English,
-                    Vel Tech Rangarajan Dr. Sagunthala R & D Institute of
-                    Science and Technology, Morai, Avadi, Chennai.
-                  </li>
-                </ul>
-              </div>
+              <ul className="list-disc pl-6 space-y-1 text-[#000000]">
+                <li>
+                  Prof. Tony Kurian — Assistant Professor, Social Science group,
+                  School of Arts and Sciences, Azim Premji University, Bengaluru
+                </li>
+                <li>
+                  Dr. Bubai Bag — Sruti Disability Rights Centre, Kolkata;
+                  Assistant Professor, Bagnan College
+                </li>
+                <li>
+                  Samya Brata Roy — Assistant Professor, GITAM (Deemed to be
+                  University), Hyderabad
+                </li>
+                <li>
+                  Dr. Sujith C — Senior Research Fellow, Department of Indian
+                  and World Literatures, EFL University Hyderabad
+                </li>
+                <li>
+                  Mohammed Jouhar Palakkal — PhD Scholar, Department of Design,
+                  IIT Hyderabad
+                </li>
+              </ul>
             </div>
 
-            {/* Break */}
-            <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">Break</h5>
-              <p className="text-base text-[#000000]">Time: 11 to 11:30 a.m.</p>
-              <p className="text-base text-[#000000]">Duration: 30 minutes</p>
-            </div>
-
-            {/* Session 5 */}
-            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Session 5
+            <div className="p-6 rounded-xl mb-6 border-2 border-dashed border-[#e6e6e6] bg-white text-center">
+              <h5 className="text-lg font-semibold text-[#000000] italic mb-1">
+                Break
               </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
+              <p className="text-sm text-[#444444]">
+                11:00 a.m. — 11:30 a.m. (30 minutes)
+              </p>
+            </div>
+
+            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Session 4 — Ideate & Prototype
+              </h5>
+              <p className="text-sm text-[#000000] font-semibold mb-2">
                 Time: 11:30 a.m. to 12:30 p.m.
               </p>
-              <p className="text-base text-[#000000] font-semibold mb-2">
-                Theme: Ideate – Whose Ideas Count? and Prototype — Accessible to
+              <p className="text-base text-[#000000] mb-3">
+                Theme: Ideate — Whose Ideas Count? and Prototype — Accessible to
                 Whom? Legible to What?
               </p>
-              <div className="mb-4">
-                <p className="text-base text-[#000000] mb-2">
-                  <strong>Theme Description:</strong>
-                </p>
-                <p className="text-base text-[#000000] mb-2">
-                  <strong>Ideate:</strong> To identify emerging trends,
-                  challenges, and future directions in Assistive Technology in
-                  the form of design fictions and critiques that are disability
-                  centric.
-                </p>
-                <p className="text-base text-[#000000]">
-                  <strong>Prototype:</strong> To examine the concepts of
-                  accessibility and legibility in the design of Assistive
-                  Technology by reflecting on inaccessible prototyping practices
-                  and disability-led prototyping processes.
-                </p>
-              </div>
-              <div>
-                <p className="text-base text-[#000000] font-semibold mb-2">
-                  Participants:
-                </p>
-                <ul className="list-none space-y-1">
-                  <li className="text-base text-[#000000]">
-                    Suman Damera, Senior Principal Engineer at Phenom, Hyderabad
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Aishwarya T.V, Co-Founder at Grailmaker Innovations
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Prof. Srinivasa Prakash Regalla, Senior Professor at the
-                    Department of Mechanical Engineering, BITS-Pilani, Hyderabad
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Plenary 3 */}
-            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Plenary 3
-              </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
-                Time: 12:30 p.m. to 1:15 p.m.
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Chair: Professor Shubha Ranganathan, Department of Liberal Arts,
+                IIT-Hyderabad
               </p>
               <p className="text-base text-[#000000] font-semibold mb-2">
-                Session Title: &apos;From Assistive Design to Equitable Systems:
-                The Disability-Led Mandate for Design Futures&apos;
+                Participants:
               </p>
-              <p className="text-base text-[#000000]">
-                <strong>Speaker:</strong> Prof. Shilpa Das, Head, Faculty of
-                Interdisciplinary Design Studies at National Institute of
-                Design, Ahmedabad.
-              </p>
+              <ul className="list-disc pl-6 space-y-1 text-[#000000]">
+                <li>
+                  Dr. K. Pavani Sree — Post-Doctoral Fellow, Department of
+                  Sociology, University of Hyderabad
+                </li>
+                <li>Aishwarya T.V — Co-Founder, Grailmaker Innovations</li>
+                <li>
+                  Prof. Srinivasa Prakash Regalla — Senior Professor, Dept. of
+                  Mechanical Engineering, BITS-Pilani, Hyderabad
+                </li>
+              </ul>
             </div>
 
-            {/* Lunch */}
-            <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">Lunch</h5>
-              <p className="text-base text-[#000000]">
-                Time: 1:15 to 2:30 p.m.
+            <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Session 5 — Define/Ideate
+              </h5>
+              <p className="text-sm text-[#000000] font-semibold mb-2">
+                Time: 12:30 to 1:15 p.m.
               </p>
-              <p className="text-base text-[#000000]">
-                Venue: Auditorium Foyer
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Chair: Professor Hemachandran Karah, Accessibility Research
+                Centre, IIT Madras
+              </p>
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Presenters:
+              </p>
+              <ul className="list-disc pl-6 space-y-1 text-[#000000]">
+                <li>
+                  Dr. Kurukhetra Dip — Assistant Professor, Department of
+                  Sociology, Banaras Hindu University
+                </li>
+                <li>
+                  Krishna Thiruvengadam — CEO & CoFounder, dVerse Technologies
+                  Pvt Ltd
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 rounded-xl mb-6 border-2 border-dashed border-[#e6e6e6] bg-white text-center">
+              <h5 className="text-lg font-semibold text-[#000000] italic mb-1">
+                Lunch
+              </h5>
+              <p className="text-sm text-[#444444]">
+                1:15 p.m. — 2:30 p.m. • Auditorium Foyer
               </p>
             </div>
           </div>
 
-          {/* Afternoon Sessions */}
           <div>
-            <h4 className="text-2xl font-bold text-[#000000] mb-6">
+            <h4 className="text-2xl font-bold text-[#000000] mb-4">
               Afternoon Sessions
             </h4>
 
-            {/* Session 6 */}
             <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
-                Session 6
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
+                Session 6 — Prototype
               </h5>
-              <p className="text-lg text-[#000000] font-semibold mb-3">
+              <p className="text-sm text-[#000000] font-semibold mb-2">
                 Time: 2:30 to 4:00 p.m.
               </p>
+              <p className="text-base text-[#000000] mb-3">
+                Theme: Prototype — Accessible to Whom? Legible to What? (Examine
+                accessibility and legibility in prototyping practices.)
+              </p>
               <p className="text-base text-[#000000] font-semibold mb-2">
-                Theme: Prototype — Accessible to Whom? Legible to What?
+                Chair: Professor Akanksha Rathore, Department of Computer
+                Science and Information Systems, BITS-Pilani Hyderabad Campus
               </p>
-              <p className="text-base text-[#000000] mb-4">
-                Theme Description: To examine the concepts of accessibility and
-                legibility in the design of Assistive Technology by reflecting
-                on inaccessible prototyping practices and disability-led
-                prototyping processes.
+              <p className="text-base text-[#000000] font-semibold mb-2">
+                Participants:
               </p>
-              <div>
-                <p className="text-base text-[#000000] font-semibold mb-2">
-                  Participants:
-                </p>
-                <ul className="list-none space-y-1">
-                  <li className="text-base text-[#000000]">
-                    Ramprasad.V, Officer, Research & Documentation,
-                    Comprehensive Care Support and Treatment for Persons with
-                    Disabilities (CCST-PwDs) at Swami Vivekananda Youth
-                    Movement, Mysuru
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Dr. K.Pavani Sree, Post-Doctoral Fellow, Department of
-                    Sociology at University of Hyderabad
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Nirdesh Joshi, PhD Scholar, Department of Design at IIT
-                    Hyderabad
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Sangita Thakur, Ashtavakra Accessibility Solutions Pvt. Ltd.
-                  </li>
-                  <li className="text-base text-[#000000]">
-                    Mohammed Jouhar Palakkal, PhD Scholar, Department of Design
-                    at IIT Hyderabad
-                  </li>
-                </ul>
-              </div>
+              <ul className="list-disc pl-6 space-y-1 text-[#000000]">
+                <li>
+                  Ramprasad V — Officer, Research & Documentation, CCST-PwDs,
+                  Swami Vivekananda Youth Movement, Mysuru
+                </li>
+                <li>
+                  Deepa Palaniappan — Consultant, Disability Team, Azim Premji
+                  University, Bengaluru
+                </li>
+                <li>
+                  Sangita Thakur — Ashtavakra Accessibility Solutions Pvt. Ltd.
+                </li>
+                <li>
+                  Nirdesh Joshi — PhD Scholar, Department of Design, IIT
+                  Hyderabad
+                </li>
+                <li>
+                  Nilesh Singit — Distinguished Research Fellow, Centre for
+                  Disability Studies, NALSAR University of Law
+                </li>
+                <li>
+                  Suman Damera — Senior Principal Engineer, Phenom, Hyderabad
+                </li>
+              </ul>
             </div>
 
-            {/* Break */}
-            <div className="bg-alt-dark p-6 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-2">Break</h5>
-              <p className="text-base text-[#000000]">
-                Time: 4 p.m. to 4:15 p.m.
+            <div className="p-6 rounded-xl mb-6 border-2 border-dashed border-[#e6e6e6] bg-white text-center">
+              <h5 className="text-lg font-semibold text-[#000000] italic mb-1">
+                Break
+              </h5>
+              <p className="text-sm text-[#444444]">
+                4:00 p.m. — 4:15 p.m. (15 minutes)
               </p>
-              <p className="text-base text-[#000000]">Duration: 15 mins.</p>
             </div>
 
-            {/* Valedictory Session */}
             <div className="bg-alt-dark p-8 rounded-xl border border-[#e6e6e6] mb-6">
-              <h5 className="text-xl font-bold text-[#000000] mb-3">
+              <h5 className="text-xl font-bold text-[#000000] mb-2">
                 Valedictory Session
               </h5>
-              <p className="text-lg text-[#000000] font-semibold">
-                Time: 4:15 p.m. to 5:00 pm
+              <p className="text-base text-[#000000] font-semibold">
+                Time: 4:15 to 5:00 p.m. — Concluding remarks
               </p>
             </div>
           </div>
