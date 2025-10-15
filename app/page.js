@@ -795,14 +795,167 @@ export default function Home() {
       {/* Sponsors Section */}
       <section id="sponsors" className="py-20 bg-alt-dark">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-[#000000] sm:text-4xl mb-12">
-              Sponsors
+          {/* Knowledge Partners */}
+          <div className="mb-20">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] text-center mb-12">
+              Knowledge Partners
             </h2>
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-[#e6e6e6] text-center">
-              <p className="text-xl font-semibold text-[#000000]">
-                Coming Soon...
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+              <div className="bg-white p-8 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center text-center">
+                <Image
+                  src="/logos/ARC_KP.png"
+                  alt="The Accessibility Research Center, IIT Madras logo"
+                  width={120}
+                  height={120}
+                  className="mb-4 object-contain"
+                />
+                <p className="text-base font-semibold text-[#000000]">
+                  The Accessibility Research Center, IIT Madras
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center text-center">
+                <Image
+                  src="/logos/CDS_KP.jpg"
+                  alt="Centre for Disability Studies, NALSAR University of Law Hyderabad logo"
+                  width={120}
+                  height={120}
+                  className="mb-4 object-contain"
+                />
+                <p className="text-base font-semibold text-[#000000]">
+                  Centre for Disability Studies, NALSAR University of Law
+                  Hyderabad
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Accessibility Partners */}
+          <div className="mb-20">
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] text-center mb-12">
+              Accessibility Partners
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Row 1 */}
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center text-center min-h-[200px]">
+                <p className="text-sm text-[#000000] mb-3">
+                  <strong>Deepa Palaniappan</strong> (Consultant for Disability
+                  Team, Azim Premji University, Bengaluru)
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
+                <Image
+                  src="/logos/apd.png"
+                  alt="Association of People with Disability logo"
+                  width={100}
+                  height={100}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  Association of People with Disability
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
+                <Image
+                  src="/logos/Telangana Viklangula_AP.jpeg"
+                  alt="Telangana Vikalangula Cooperative Corporation Braille Press logo"
+                  width={100}
+                  height={100}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  Telangana Vikalangula Cooperative Corporation Braille Press
+                </p>
+              </div>
+
+              {/* Row 2 */}
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
+                <Image
+                  src="/logos/mitrajyothi_ap.jpeg"
+                  alt="Mitrajyothi, Bangalore logo"
+                  width={100}
+                  height={100}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  Mitrajyothi, Bangalore
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center text-center min-h-[200px]">
+                <Image
+                  src="/logos/Yestoaccess_AP.png"
+                  alt="Yes to Access and Access Audit training logo"
+                  width={80}
+                  height={80}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  Yes to Access and Access Audit training by APD, Association of
+                  People with Disability
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
+                <Image
+                  src="/logos/nalsar_ap.png"
+                  alt="Convention Center, NALSAR University of Law Hyderabad logo"
+                  width={100}
+                  height={100}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  Convention Center, NALSAR University of Law Hyderabad
+                </p>
+              </div>
+
+              {/* Row 3 */}
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
+                <Image
+                  src="/logos/trinayani.png"
+                  alt="TRINAYANI - Creating Awareness about Disability logo"
+                  width={120}
+                  height={60}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  TRINAYANI
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-[#e6e6e6] flex flex-col items-center justify-center min-h-[200px]">
+                <Image
+                  src="/logos/Spacefelt_logo.png"
+                  alt="Spacefelt Accessibility Solutions logo"
+                  width={100}
+                  height={100}
+                  className="mb-3 object-contain"
+                />
+                <p className="text-sm font-semibold text-[#000000]">
+                  Spacefelt Accessibility Solutions
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Sign Language Interpreters */}
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-[#000000] text-center mb-12">
+              Sign Language Interpreters
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              <div className="bg-white p-8 rounded-xl border border-[#e6e6e6] text-center">
+                <p className="text-base font-semibold text-[#000000] mb-1">
+                  Deepa Kesavan
+                </p>
+                <p className="text-sm text-[#444444]">
+                  (Independent Sign Language Interpreter)
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-xl border border-[#e6e6e6] text-center">
+                <p className="text-base font-semibold text-[#000000] mb-1">
+                  Maurya Kesavan
+                </p>
+                <p className="text-sm text-[#444444]">
+                  (Independent Sign Language Interpreter)
+                </p>
+              </div>
             </div>
           </div>
         </div>
