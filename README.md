@@ -21,10 +21,7 @@ A two-day international symposium hosted by **BITS Pilani Hyderabad Campus** on 
 - [Technology Stack](#technology-stack)
 - [Running Locally](#running-locally)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Deployment](#deployment)
 - [Support](#support)
-- [Acknowledgments](#acknowledgments)
 - [License](#license)
 
 ---
@@ -272,48 +269,6 @@ symposium-website/
 
 ---
 
-## Contributing
-
-We welcome contributions from the community! To contribute:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
-
-### Code Style
-
-- Follow the existing code style and conventions
-- Run `npm run lint` before committing
-- Ensure all accessibility features are maintained
-- Test on multiple browsers and screen readers
-
----
-
-## Deployment
-
-### Deploy on Vercel (Recommended)
-
-The easiest way to deploy this Next.js application is using the [Vercel Platform](https://vercel.com/new):
-
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Import your repository to Vercel
-3. Vercel will automatically detect Next.js and configure the build settings
-4. Deploy with one click
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vedantcoder/Accessquity-website)
-
-### Other Deployment Options
-
-- **Netlify**: [Deployment Guide](https://docs.netlify.com/frameworks/next-js/)
-- **AWS Amplify**: [Deployment Guide](https://docs.amplify.aws/guides/hosting/nextjs/)
-- **Self-Hosted**: Use `npm run build` and `npm run start` on your server
-
-For more details, check the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
-
----
-
 ## Support
 
 For questions, issues, or support regarding:
@@ -324,24 +279,11 @@ For questions, issues, or support regarding:
 
 ---
 
-## Acknowledgments
-
-This symposium is made possible through the support of:
-
-- **BITS Pilani Hyderabad Campus** - Host institution
-- **Royal Academy of Engineering, United Kingdom** - Primary supporter
-- **Department of Science, Innovation, and Technology's International Science Partnerships Fund (ISPF)** - Funding through the Frontiers Champions scheme
-- All partner organizations, DPOs, and NGOs supporting disability equity
-
-Special thanks to the disability community for their invaluable guidance and leadership in shaping this symposium.
-
----
-
 ## License
 
-This project is private and proprietary to BITS Pilani Hyderabad Campus and the symposium organizing committee.
+This project is private and proprietary.
 
-**Copyright © 2025 BITS Pilani Hyderabad Campus. All rights reserved.**
+**© 2025 accessquity.com. All rights reserved.**
 
 ---
 
@@ -373,4 +315,4 @@ Experience the fully accessible website designed for persons with disabilities a
 
 **Built for disability equity and inclusive design**
 
-Copyright © 2025 BITS Pilani Hyderabad Campus. All rights reserved.
+© 2025 accessquity.com. All rights reserved.
